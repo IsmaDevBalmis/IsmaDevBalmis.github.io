@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comentarios en: Página de ejemplo	</title>
-	<atom:link href="http://ismadevbalmis.github.io/pagina-ejemplo/feed/" rel="self" type="application/rss+xml" />
-	<link>http://ismadevbalmis.github.io</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../index.html</link>
 	<description>Streamer de Twitch</description>
 	<lastBuildDate>Mon, 12 Apr 2021 22:35:08 +0000</lastBuildDate>
 	<sy:updatePeriod>

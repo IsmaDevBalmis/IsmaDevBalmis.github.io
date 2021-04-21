@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comentarios en: ¡Hola, mundo!	</title>
-	<atom:link href="http://ismadevbalmis.github.io/2021/04/12/hola-mundo/feed/" rel="self" type="application/rss+xml" />
-	<link>http://ismadevbalmis.github.io/2021/04/12/hola-mundo/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Streamer de Twitch</description>
 	<lastBuildDate>Mon, 12 Apr 2021 22:35:08 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		Por: Un comentarista de WordPress		</title>
-		<link>http://ismadevbalmis.github.io/2021/04/12/hola-mundo/#comment-1</link>
+		<link>./../index.html#comment-1</link>
 
 		<dc:creator><![CDATA[Un comentarista de WordPress]]></dc:creator>
 		<pubDate>Mon, 12 Apr 2021 22:35:08 +0000</pubDate>
-		<guid isPermaLink="false">http://ismadevbalmis.github.io/?p=1#comment-1</guid>
+		<guid isPermaLink="false">./../../../../../index.html?p=1#comment-1</guid>
 
 					<description><![CDATA[Hola, esto es un comentario.
 Para empezar a moderar, editar y borrar comentarios, por favor, visita la pantalla de comentarios en el escritorio.

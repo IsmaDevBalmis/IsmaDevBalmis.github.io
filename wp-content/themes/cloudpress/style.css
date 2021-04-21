@@ -1376,7 +1376,7 @@ hr.divider { border-top: none; width: 70px; height: 2px; margin: 15px auto 21px;
     position: relative;
     width: 100%;
 	height: 100%;
-    background: url(http://ismadevbalmis.github.io/wp-content/themes/images/bg/bg03.jpg) center center no-repeat;
+    background: url(./../images/bg/bg03.jpg) center center no-repeat;
     background-size: cover;
 }
 .contact:before {
@@ -1515,7 +1515,7 @@ address i {
 /*===================================================================================*/
 
 .page-title-section {
-	background: #17212c url("http://ismadevbalmis.github.io/wp-content/themes/cloudpress/assets/images/theme-data/mobile-music-ipad-technology-play-internet-759447-pxhere.com.jpg");
+	background: #17212c url("./assets/images/theme-data/mobile-music-ipad-technology-play-internet-759447-pxhere.com.jpg");
 	background-attachment: scroll;
 	background-position: top center;
     background-repeat: no-repeat;
@@ -1704,7 +1704,7 @@ Widget Pages, Widget Recent Comments, Widget Recent Entries */
 /*===================================================================================*/
 
 .footer-sidebar {
-    background: url('http://ismadevbalmis.github.io/wp-content/themes/cloudpress/assets/images/theme-data/map.png') 50% 50% no-repeat;
+    background: url('./assets/images/theme-data/map.png') 50% 50% no-repeat;
 }
 .footer-sidebar {
     height: 100%;
@@ -2155,7 +2155,7 @@ label {
     box-shadow: 0 0 10px 0 rgba(48, 48, 48, 0.5);
     margin: 30px auto;
     position: relative;
-    background: url(http://ismadevbalmis.github.io/wp-content/themes/cloudpress/assets/images/theme-data/bg-pattern/bg-img1.png) repeat fixed;
+    background: url(./assets/images/theme-data/bg-pattern/bg-img1.png) repeat fixed;
 }
 }
 
