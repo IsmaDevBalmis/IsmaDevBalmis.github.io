@@ -8,7 +8,7 @@ function gestionarFicheroXML(xml){
 
     let capaVacia = document.querySelector("#ficheroXML")
 	let libros = xml.querySelectorAll("libro")
-	for(let i=0; i<libros.length; i++)
+	for(let i=0; i<libros.length; i++){
 		//capaVacia.innerHTML += "<div class='fila'>" + libros[i].textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("ISBN").textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("titulo").textContent + "</div>"
@@ -18,7 +18,7 @@ function gestionarFicheroXML(xml){
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("fechaPublicacion").textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("paginaWeb").textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("precio").textContent + "</div>"
-
+    }
 	
     
     let capa = document.querySelector("div:nth-child(1)") 
