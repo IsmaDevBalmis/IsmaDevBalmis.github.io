@@ -18,7 +18,7 @@ function gestionarFicheroXML(xml){
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("fechaPublicacion").textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("paginaWeb").textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("precio").textContent + "</div>"
-        capaVacia.innerHTML += "<div class='fila'>" +  + "</div>"
+        capaVacia.innerHTML += "<div class='fila'> </div>"
     }
 	
     
