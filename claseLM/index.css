@@ -6,3 +6,7 @@
 .fila{ 
     display: table-row;
 }
+
+.celda{
+    display: table-cell;
+}
