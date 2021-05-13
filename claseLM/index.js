@@ -21,7 +21,7 @@ function gestionarFicheroXML(xml){
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("editorial").textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("fechaPublicacion").textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("paginaWeb").textContent + "</div>"
-		if(minimo == libros[i].querySelector("precio").textContent){
+		if(minimo == +libros[i].querySelector("precio").textContent){
             capaVacia.innerHTML += "<div class='celda masBarato'>" + libros[i].querySelector("precio").textContent + "</div>"
         }else{
             capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("precio").textContent + "</div>"
