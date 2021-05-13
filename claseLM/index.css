@@ -1,3 +1,8 @@
 .tabla{
     display: table;
+    border: 1px solid black;
+}
+
+.linea{
+
 }
