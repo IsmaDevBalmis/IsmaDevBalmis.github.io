@@ -11,6 +11,7 @@ function gestionarFicheroXML(xml){
 	let libros = xml.querySelectorAll("libro")
 
     let minimo = numeroMinimo(libros)
+    alert(minimo)
 	for(let i=0; i<libros.length; i++){
 		//capaVacia.innerHTML += "<div class='fila'>" + libros[i].textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("ISBN").textContent + "</div>"
