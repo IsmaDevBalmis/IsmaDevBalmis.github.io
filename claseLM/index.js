@@ -19,12 +19,30 @@ function gestionarFicheroXML(xml){
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("paginaWeb").textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("precio").textContent + "</div>"
         capaVacia.innerHTML += "<div class='fila'> </div>"
+    
+        numeroMinimo(libros[i].querySelector("precio").textContent)
+    
     }
 	
     
+
+
+
     let capa = document.querySelector("div:nth-child(1)") 
     capa.addEventListener("click",CargarFichero);
 
 
 }
 
+
+function numeroMinimo(value){
+let numMenor
+    if (value < numMenor){
+        numMenor = value
+    }
+
+
+
+}
+
+console.log(numMenor)
