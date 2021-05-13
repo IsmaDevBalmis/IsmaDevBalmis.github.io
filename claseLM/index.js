@@ -1,5 +1,5 @@
 'use strict'
-let numMenor = 10000
+let numMenor
 let fichero = "libros"; 
 
 loadLDocA(fichero,"xml")
@@ -7,7 +7,10 @@ loadLDocA(fichero,"xml")
 function gestionarFicheroXML(xml){
 
     let capaVacia = document.querySelector("#ficheroXML")
+
 	let libros = xml.querySelectorAll("libro")
+
+    let minimo = numeroMinimo(libros)
 	for(let i=0; i<libros.length; i++){
 		//capaVacia.innerHTML += "<div class='fila'>" + libros[i].textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("ISBN").textContent + "</div>"
@@ -17,10 +20,16 @@ function gestionarFicheroXML(xml){
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("editorial").textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("fechaPublicacion").textContent + "</div>"
 		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("paginaWeb").textContent + "</div>"
-		capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("precio").textContent + "</div>"
+		if(minimo == libros[i].querySelector("precio").textContent){
+            capaVacia.innerHTML += "<div class='celda masBarato'>" + libros[i].querySelector("precio").textContent + "</div>"
+        }else{
+            capaVacia.innerHTML += "<div class='celda'>" + libros[i].querySelector("precio").textContent + "</div>"
+        }
+        
+        
         capaVacia.innerHTML += "<div class='fila'> </div>"
     
-        numeroMinimo(libros[i].querySelector("precio").textContent)
+        
     
     }
 	
@@ -35,14 +44,15 @@ function gestionarFicheroXML(xml){
 }
 
 
-function numeroMinimo(value){
+function numeroMinimo(libros){
 
-    if (value < numMenor){
-        numMenor = value
+  let precios = []
+
+    for (let j = 0; j < libros.length; j++) {
+        precios.push(+libros[j].querySelector("precio").textContent)
+        
     }
 
-
+   return Math.min(...precios)
 
 }
-
-console.log(numMenor)
