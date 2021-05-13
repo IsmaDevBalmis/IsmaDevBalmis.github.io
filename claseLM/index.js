@@ -1,6 +1,6 @@
 'use strict'
 
-let fichero = "libros.xml"; 
+let fichero = "libros"; 
 
 loadLDocA(fichero,"xml")
 
