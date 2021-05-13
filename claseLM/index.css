@@ -11,3 +11,7 @@
     display: table-cell;
     border: 1px solid black;
 }
+
+.masBarato{
+    background: rgba(0, 255, 0, 0,3);
+}
