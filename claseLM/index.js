@@ -1,5 +1,5 @@
 'use strict'
-
+let numMenor = 10000
 let fichero = "libros"; 
 
 loadLDocA(fichero,"xml")
@@ -36,7 +36,7 @@ function gestionarFicheroXML(xml){
 
 
 function numeroMinimo(value){
-let numMenor
+
     if (value < numMenor){
         numMenor = value
     }
