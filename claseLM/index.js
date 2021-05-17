@@ -6,9 +6,9 @@ loadLDocA(fichero,"txt")
 
 
 
-function gestionarFicheroXML(txt){
+function gestionarFicheroXML(documento){
 
-   alert(txt)
+   alert(documento)
 
 
 }
