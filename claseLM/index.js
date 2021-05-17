@@ -2,7 +2,15 @@
 
 let fichero = "fichero.txt"; 
 
-loadLDocA(fichero,"txt")
+
+setInterval(CargarFichero, 5000)
+
+function CargarFichero(){
+
+    loadLDocA(fichero,"txt")
+}
+
+
 
 
 
