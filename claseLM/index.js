@@ -10,5 +10,7 @@ function gestionarFicheroXML(documento){
 
    alert(documento)
 
+   documento.split("/n")
+
 
 }
