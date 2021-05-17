@@ -1,6 +1,6 @@
 'use strict'
 
-let fichero = "fichero"; 
+let fichero = "fichero.txt"; 
 
 loadLDocA(fichero,"txt")
 
