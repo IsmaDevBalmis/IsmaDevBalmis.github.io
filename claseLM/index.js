@@ -10,7 +10,7 @@ function gestionarFicheroTXT(documento){
 
    
 
-   let lineas = documento.split("/n")
+   let lineas = documento.split("\n")
 
    alert(lineas)
 
