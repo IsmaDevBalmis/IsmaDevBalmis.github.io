@@ -1,0 +1,17 @@
+.tabla{
+    display: table;
+   
+}
+
+.fila{ 
+    display: table-row;
+}
+
+.celda{
+    display: table-cell;
+    border: 1px solid black;
+}
+
+.masBarato{
+    background: rgba(85, 131, 85, 0.7);
+}
