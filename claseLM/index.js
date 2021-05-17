@@ -6,11 +6,12 @@ loadLDocA(fichero,"txt")
 
 
 
-function gestionarFicheroXML(documento){
+function gestionarFicheroTXT(documento){
 
-   alert(documento)
+   
 
-   documento.split("/n")
+   let lineas = documento.split("/n")
 
+   alert(lineas)
 
 }
