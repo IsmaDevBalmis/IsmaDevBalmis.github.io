@@ -1,0 +1,16 @@
+div{
+    display: flex;
+}
+
+.izquierda{
+
+    align-self: flex-start;
+
+
+}
+
+.derecha{
+
+    align-self: flex-end;
+
+}
