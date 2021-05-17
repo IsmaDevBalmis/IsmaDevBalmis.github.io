@@ -9,7 +9,7 @@ loadLDocA(fichero,"txt")
 function gestionarFicheroTXT(documento){
 
    
-
+   alert(documento)
    let lineas = documento.split("\n")
 
    alert(lineas)
