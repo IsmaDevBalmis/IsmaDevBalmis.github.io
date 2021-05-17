@@ -25,7 +25,7 @@ function gestionarFicheroTXT(documento){
 
    let capaVacia = document.querySelector("#ficheroTXT")
 
-   
+   capaVacia.innerHTML = ""
 
 
    for(let i=0; i<lineas.length; i++){
