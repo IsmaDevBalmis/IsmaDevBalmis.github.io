@@ -261,13 +261,203 @@ pre[data-line] .line-highlight[data-end]:after {
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="apuntes-2o-dam-b">Apuntes 2&#xBA; DAM B</h1>
-
-<h4 class="mume-header" id="indice-asignaturas"><strong>Indice Asignaturas</strong></h4>
+      <h1 class="mume-header undefined" id="indice_pagina">Tema 2 Introducci&#xF3;n a WPF</h1>
 
 <ul>
-<li><a href="./DINT/HTML/index.html">DINT</a></li>
+<li><a href="../../index.html">Volver a asignaturas</a></li>
+<li><a href="#eventos_id">Eventos</a></li>
 </ul>
+<h3 class="mume-header" id="controles-b%C3%A1sicos">Controles b&#xE1;sicos</h3>
+
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Propiedades</strong></td>
+<td><strong>Eventos</strong></td>
+</tr>
+<tr>
+<td>Content</td>
+<td>Click</td>
+</tr>
+<tr>
+<td>ClickMode</td>
+<td></td>
+</tr>
+<tr>
+<td>IsDefault</td>
+<td></td>
+</tr>
+<tr>
+<td>IsCancel</td>
+<td></td>
+</tr>
+<tr>
+<td>IsEnabled</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>TextBox</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Propiedades</strong></td>
+<td><strong>Eventos</strong></td>
+</tr>
+<tr>
+<td>Text</td>
+<td>TextChanged</td>
+</tr>
+<tr>
+<td>AcceptsReturn</td>
+<td></td>
+</tr>
+<tr>
+<td>TextWrapping</td>
+<td></td>
+</tr>
+<tr>
+<td>IsReadOnly</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Propiedades</strong></td>
+<td><strong>Eventos</strong></td>
+</tr>
+<tr>
+<td>Source</td>
+<td></td>
+</tr>
+<tr>
+<td>Stretch</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>CheckBox</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Propiedades</strong></td>
+<td><strong>Eventos</strong></td>
+</tr>
+<tr>
+<td>Content</td>
+<td>Checked</td>
+</tr>
+<tr>
+<td>IsChacked</td>
+<td>Unchecked</td>
+</tr>
+<tr>
+<td>IsThreeState</td>
+<td>Indeterminate</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>RadioButton</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Propiedades</strong></td>
+<td><strong>Eventos</strong></td>
+</tr>
+<tr>
+<td>Content</td>
+<td>Checked</td>
+</tr>
+<tr>
+<td>IsChecked</td>
+<td>Unchecked</td>
+</tr>
+<tr>
+<td>GroupName</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>TextBlock</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Propiedades</strong></td>
+<td><strong>Eventos</strong></td>
+</tr>
+<tr>
+<td>Text</td>
+<td></td>
+</tr>
+<tr>
+<td>TextTrimming</td>
+<td></td>
+</tr>
+<tr>
+<td>TextWrapping</td>
+<td></td>
+</tr>
+<tr>
+<td>TextAligment</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 class="mume-header undefined" id="eventos_id">Eventos</h3>
+
+<p><a href="#indice_pagina">Ir al &#xED;ndice</a></p>
+<blockquote>
+<p>Click = &quot;Nombre del manejador de eventos&quot;</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="CSharp" class="language-csharp">    <span class="token keyword">private</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">SaludarButton_Click</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">object</span></span> sender<span class="token punctuation">,</span> <span class="token class-name">RoutedEventArgs</span> e<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        saludoTextBlock<span class="token punctuation">.</span>Text <span class="token operator">=</span> <span class="token string">&quot;Hola &quot;</span> <span class="token operator">+</span> nombreTextBox<span class="token punctuation">.</span>Text <span class="token operator">+</span> <span class="token string">&quot;!&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+</pre><dl>
+<dt>Tags</dt>
+<dd>La propiedad Tag permite asociar informaci&#xF3;n al control. Es de tipo <strong>Object</strong>.</dd>
+</dl>
 
       </div>
       
