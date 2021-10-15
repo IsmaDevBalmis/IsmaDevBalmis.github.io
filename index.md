@@ -2,6 +2,6 @@
 
 ####**Indice Asignaturas**
 
-* [DINT](./DINT/HTML/index.html)
+* [DINT](./DINT/HTML/index_dint.html)
 
 
