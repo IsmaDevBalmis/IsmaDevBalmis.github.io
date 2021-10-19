@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>index</title>
+      <title>Kotlin_T-02</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -261,14 +261,274 @@ pre[data-line] .line-highlight[data-end]:after {
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="apuntes-2o-dam-b">Apuntes 2&#xBA; DAM B</h1>
-
-<h4 class="mume-header" id="indice-asignaturas"><strong>Indice Asignaturas</strong></h4>
+      <h1 class="mume-header" id="teoria-kotlin">TEORIA Kotlin</h1>
 
 <ul>
-<li><a href="./DINT/HTML/index_dint.html">DINT</a></li>
-<li><a href="./AD/HTML/index_ad.html">AD</a></li>
-<li><a href="./PMDM/HTML/index_pmdm.html">PMDM</a></li>
+<li><a href="../../index.html">Volver a asignaturas</a></li>
+<li><a href="./index_pmdm.html">Volver a temas</a></li>
+</ul>
+<h1 class="mume-header" id="t-02-estructura-de-un-proyecto-android-stuido">T-02 Estructura de un proyecto Android Stuido</h1>
+
+<h1 class="mume-header" id="indice">Indice</h1>
+
+<ul>
+<li><a href="#general"><strong>General</strong></a></li>
+<li><a href="#recursos-alternativos-en-android"><strong>Recursos Alternativos En Android</strong></a></li>
+<li><a href="#layout"><strong>Layout</strong></a></li>
+<li><a href="#mipmap-y-drawable"><strong>Mipmap y Drawable</strong></a>
+<ul>
+<li><a href="#--mipmap--">Mipmap</a></li>
+<li><a href="#--drawable--">Drawable</a></li>
+</ul>
+</li>
+<li><a href="#values"><strong>Values</strong></a></li>
+<li><a href="#utilidad-idiomas-extra---kt"><strong>A&#xF1;adir Idiomas extra - KT</strong></a></li>
+<li><a href="#acceder-a-los-recursos-en-android"><strong>Acceder a los Recursos en Android</strong></a>
+<ul>
+<li><a href="#acceder-desde-kotlin">Acceder desde Kotlin</a></li>
+<li><a href="#acceder-desde-xml">Acceder desde XML</a></li>
+</ul>
+</li>
+<li><a href="#android-manifest"><strong>Android Manifest</strong></a>
+<ul>
+<li><a href="#sintaxis">Sintaxis</a>
+<ul>
+<li><a href="#etiqueta-aplicaci-n">Etiqueta aplicaci&#xF3;n</a></li>
+<li><a href="#etiqueta-activity">Etiqueta activity</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="general">General</h2>
+
+<ul>
+<li>Subdirectorio Android Studio:
+<ul>
+<li><strong>Drawable</strong> - Recursos gr&#xE1;ficos</li>
+<li><strong>Mipmap</strong> - Iconos aplicaci&#xF3;n</li>
+<li><strong>Layout</strong> - Interfaz usuario (XML)</li>
+<li><strong>Menu</strong> - Men&#xFA;s de interfaces (XML)</li>
+<li><strong>Values</strong> - Datos simples, enteros, strings, colores... (XML)</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="recursos-alternativos-en-android">Recursos Alternativos En Android</h2>
+
+<ul>
+<li>
+<p>Variaci&#xF3;n de recursos que se ajustan a una configuraci&#xF3;n del m&#xF3;vil donde se ejecuta la app.</p>
+</li>
+<li>
+<p><strong>Ejemplo</strong></p>
+<ul>
+<li><strong>Mipmap-hdpi</strong> - variaci&#xF3;n de ic_launcher.png.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="layout">Layout</h2>
+
+<ul>
+<li>
+<p>Archivo con las vistas de actividades o fragments.</p>
+</li>
+<li>
+<p>Archivo por defecto <code>activity_main.xml</code>.</p>
+<ul>
+<li>Dise&#xF1;o de interfaz de mi actividad principal.</li>
+</ul>
+</li>
+<li>
+<p>Por defecto <code>&lt;ConstraintLayout&gt;</code>.</p>
+</li>
+<li>
+<p>Orden y secuencia de los widgets de la actividad.</p>
+</li>
+<li>
+<p>Varios tipos:</p>
+<ul>
+<li><code>LinearLayout</code></li>
+<li><code>GridLayout</code></li>
+<li><code>FrameLayout</code></li>
+<li><code>ConstraintLayout</code></li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="mipmap-y-drawable">Mipmap y Drawable</h2>
+
+<h4 class="mume-header" id="mipmap">Mipmap</h4>
+
+<ul>
+<li>
+<p>Relacionadas con el tipo de densidad de pantalla donde se ejecutar&#xE1; la aplicaci&#xF3;n.</p>
+</li>
+<li>
+<p>La mayoria de los m&#xF3;viles tienen 4 densidades:</p>
+<ul>
+<li><strong>Mediun Dots per Inch (mdpi)</strong> 160 ppi.</li>
+<li><strong>High Dot per Inch (hdpi)</strong> 240 ppi.</li>
+<li><strong>Extra high dots per inch (xhdpi)</strong> &gt; 340 ppi.</li>
+<li><strong>Extra Extra high dots per inch (xxhdpi)</strong> &gt; 480 ppi.</li>
+<li><strong>Extra Extra Extra high dots per inch (xxxhdpi)</strong> &gt; 640 ppi.</li>
+</ul>
+</li>
+<li>
+<p>Icono adapatativo en <code>mipmap-anydpi-v26</code> (desde <strong>SDK 26</strong>), ficheros <code>.xml</code> que se adaptan al dispositivo.</p>
+</li>
+</ul>
+<h4 class="mume-header" id="drawable">Drawable</h4>
+
+<ul>
+<li>Para colocar im&#xE1;genes que se vayan a usar en la app.</li>
+<li>Mismo esquema de sufijos que <strong>mipmap</strong>.</li>
+</ul>
+<h2 class="mume-header" id="values">Values</h2>
+
+<ul>
+<li>
+<p>Se crean por defecto:</p>
+</li>
+<li>
+<p><code>colors.xml</code></p>
+<ul>
+<li>Los elementos se declaran usando la etiqueta <code>color</code>.</li>
+<li>Atributo <code>name</code> como identificador.</li>
+<li>El color debe ir en #hexadecimal.</li>
+<li>Paleta de colores disponible a la izquierda.</li>
+</ul>
+</li>
+<li>
+<p><code>strings.xml</code></p>
+<ul>
+<li>Uno de los recursos m&#xE1;s relevantes.</li>
+<li>Almacena todas las cadenas que se muestran en los widgets (controles, formas, botones, vistas...) de las actividades.</li>
+<li>Los elementos se declaran usando la etiqueta <code>string</code>.</li>
+<li>Atributo <code>name</code> como identificador.</li>
+<li>Dentro de esa etiqueta ir&#xE1; <code>&lt;string name=&quot;app_name&quot;&gt;My Application&lt;/string&gt;</code>.</li>
+<li>Se recomienda a&#xF1;adir cadenas de botones u otros elemntos a este archivo.</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="utilidad-idiomas-extra-kt">Utilidad Idiomas extra - KT</h2>
+
+<ul>
+<li>Facilita el uso de m&#xFA;ltiples idiomas <code>new</code> -&gt; <code>Android Resources File</code> -&gt; <code>Value</code>.</li>
+<li>A cada uno le a&#xF1;adiremos dentro de <code>values-en</code>.</li>
+</ul>
+<pre data-role="codeBlock" data-info="xml" class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>resources</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app_name<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>My Application<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>String</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>hola_mundo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Hello World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>String</span><span class="token punctuation">&gt;</span></span>
+</pre><ul>
+<li>Debemos asociar la cadena al <code>TextView</code> del layout principal en <code>activity_main.xml</code></li>
+<li>Ponemos en el atributo <code>text</code> el recurso <code>@string/hola_mundo</code>.</li>
+<li>El texto cambiar&#xE1; dependiendo del idioma del dispositivo.</li>
+<li><code>themes.xml</code></li>
+</ul>
+<h2 class="mume-header" id="acceder-a-los-recursos-en-android">Acceder a los Recursos en Android</h2>
+
+<ul>
+<li>Se necesita un identificador para acceder a los recursos.</li>
+<li>Los identificadores se ubican en la clase <code>R</code>.</li>
+<li>No recomendable editar manualmente la clase.</li>
+<li>Cada tipo de recurso est&#xE1; en la carpeta <code>res</code> y en la clase <code>R.class</code>.</li>
+</ul>
+<h3 class="mume-header" id="acceder-desde-kotlin">Acceder desde Kotlin</h3>
+
+<p>-Usaremos <strong>Paquete.R.tipoRecurso.nombreRecurso</strong>.</p>
+<ul>
+<li><code>drawable</code> -&gt; <code>R.drawable</code>.</li>
+<li><code>ic_launcher_background</code> -&gt; <code>R.drawable.ic_launcher_background</code>.</li>
+<li>Para acceder a la clase <code>Resources</code>
+<ul>
+<li><code>kotlin val color=resources.getColor(android.R.color.holo_blue_bright, theme)</code></li>
+</ul>
+</li>
+</ul>
+<h3 class="mume-header" id="acceder-desde-xml">Acceder desde XML</h3>
+
+<ul>
+<li>Usamos la sintaxis <strong>@[Paquete:]tipoRecurso/nombreRecurso</strong><br>
+-<strong>Ejemplo</strong>
+<ul>
+<li><code>xml android:text=&quot;@string/hola_mundo&quot;</code></li>
+</ul>
+</li>
+<li>Recursos del sistema ser&#xED;a <strong>@android:tipoRecurso/nombreRecurso</strong>.</li>
+</ul>
+<h2 class="mume-header" id="android-manifest">Android Manifest</h2>
+
+<ul>
+<li>Archivo de mayor importancia.</li>
+<li>Es un <code>XML</code>.</li>
+<li>Caracter&#xED;sticas de la app
+<ul>
+<li>Versi&#xF3;n SDK</li>
+<li>Permisos</li>
+<li>Servicios</li>
+<li>Activitys</li>
+</ul>
+</li>
+<li>Muestra descripci&#xF3;n de nuestra aplicaci&#xF3;n.</li>
+</ul>
+<h3>Sintaxis</h3>
+<ul>
+<li>Nodo ra&#xED;z <code>&lt;manifest&gt;</code> y hijo <code>application</code>.</li>
+<li>Dos atributos
+<ul>
+<li><code>xmlsn:android</code> No deberemos cambiarlo nunca, es el namespace del archivo.</li>
+<li><code>package</code> Indica nombre paquete que soporta la app, el nombre debe ser &#xFA;nico y diferenciador.</li>
+</ul>
+</li>
+<li><code>application</code> representa como est&#xE1; construida la aplicaci&#xF3;n
+<ul>
+<li>Actividades</li>
+<li>Librer&#xED;as</li>
+<li>Intents</li>
+<li>Providers</li>
+</ul>
+</li>
+</ul>
+<h4>Etiqueta aplicaci&#xF3;n</h4>
+<ul>
+<li>Atributos
+<ul>
+<li><strong>allowBackup</strong> - Si la app mantiene su estado al cerrar el <strong>AVD</strong>.</li>
+<li><strong>icon</strong> - Ubicaci&#xF3;n del icono, carpetas <code>mipmap</code> -&gt; <code>ic_launcher.png</code>.</li>
+<li><strong>label</strong> - Nombre de la app <code>strings.xml</code> -&gt; <code>app_name</code>.</li>
+<li><strong>theme</strong> - Personalizaci&#xF3;n del estilo visual de la app <code>styles.xml</code></li>
+<li><strong>supportsRtl</strong> - Si la app admite dise&#xF1;or de derecha a izquierda. (SDK &gt; 17)</li>
+</ul>
+</li>
+</ul>
+<h4>Etiqueta activity</h4>
+<ul>
+<li>
+<p>Cada etiqueta representa una actividad en la app.</p>
+</li>
+<li>
+<p>Atributos</p>
+<ul>
+<li><strong>label</strong> - Texto cabecera actividad</li>
+<li><strong>android:name</strong> - Nombre de la actividad.</li>
+<li><strong>android:screenOrientation</strong> - Define orientaci&#xF3;n de la app, cuando hay cambio de orientaci&#xF3;n se destruye la actividad.</li>
+<li><strong>android:configChanges</strong> - Indicar que los eventos (orientci&#xF3;n &amp; teclado), no destruir&#xE1;n la actividad.</li>
+</ul>
+</li>
+<li>
+<p><code>&lt;intent-filter&gt;</code> + <code>&lt;action&gt;</code> Indica que queremos que la activity va a ser un punto de entrada para nuestra app.</p>
+</li>
+<li>
+<p>Decir ante que intent va a reaccionar.</p>
+</li>
+<li>
+<p>Solo puede reaccionar una activity.</p>
+</li>
+<li>
+<p><code>&lt;category&gt;</code> A&#xF1;adimos la actividad al lanzador de la app.</p>
+</li>
+<li>
+<p>Sin <code>&lt;intent-filter&gt;</code> no podemos lanzar la app desde dentro.</p>
+</li>
 </ul>
 
       </div>
