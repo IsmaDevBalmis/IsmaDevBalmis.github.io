@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+}
+
+main{
+    min-height: 100vh;
+	max-width: 100vw;
+}
+/* Header*/
+header {
+  background-image: url(../sources/img/fondoheader.jpg);
+  color: white;
+  height: 25vh;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/*
+
+hay que modificiar la altura de la imagen
+
+.logo {
+  background: rgba(255, 255, 255, 0.3);
+  height: 20vh;
+
+}*/
+/*
+
+El nav que tengo ahora puesto es para el hueco del menú de
+navegación tenerlo visible de momento
+Habrá que cambiar las etiquetas para
+dejarlo como menú de navegación.
+
+*/
+
+.contenedorpadre{
+  display: flex;
+}
+.navIndex{
+  background-size: 100%;
+  padding: 10px;
+  background: rgba(255, 0, 0, 0.5);
+  width: 40%;
+  align-items: center;
+
+
+}
+.navIndex a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.navIndex a:hover {
+  background-color:bisque;
+  color: black;
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    margin: 0px;
+    background: rgb(255, 0, 0);
+}

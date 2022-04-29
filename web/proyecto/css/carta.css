@@ -1,0 +1,85 @@
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+.contenedorpadre{
+  padding: 3%;
+  display:flex;
+  justify-content: center;
+  background: -webkit-linear-gradient(left, #78522B 10%, #DCAE23 90%);
+  background: -o-linear-gradient(left, #78522B 10%, #DCAE23 90%);
+  background: linear-gradient(to right, #78522B 10%, #DCAE23 90%);
+  box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.tablaencabezado
+{
+  box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.2);
+  border:2px;
+}
+.img
+{
+  max-height: 120px;
+  max-width: 120px;
+  justify-content: center;
+}
+
+
+.titulo
+{
+  text-align: center;
+  font-family:'Hachi Maru Pop', cursive;
+  border: 1px dotted #ff8833;
+  text-shadow: 5px 5px 5px #000000;
+}
+.titulo2
+{
+  font-family: fantasy;
+  color: black;
+  text-align:center;
+  text-shadow: 8px 8px 8px #000000;
+}
+.titulo3
+{
+  font-family: monospace;
+  font-size: 18px;
+  color: #99FF99;
+  text-align: left;
+  text-shadow: 10px 10px 10px #000000;
+}
+.bordes {
+  padding: 3px 10px;
+  border: #AF793D; 5px double;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.contenedorelementos
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabla
+{
+display:table;
+background-color: #78522B;
+border:1px;
+box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.textos
+{
+  text-decoration: underline;
+  font-family: 'Sofia', cursive;
+  border:2px;
+}
+.contenedorpequeño {
+  flex: 30%;
+  flex-direction: row;
+  padding: 20px;
+}
+.contenedorgrande {
+  flex: 70%;
+  flex-direction: row;
+  padding: 20px;
+
+}

@@ -1,0 +1,68 @@
+
+body{
+  background: -webkit-linear-gradient(left, #78522B 10%, #DCAE23 90%);
+  background: -o-linear-gradient(left, #78522B 10%, #DCAE23 90%);
+  background: linear-gradient(to right, #78522B 10%, #DCAE23 90%);
+}
+
+section{
+
+    width: 15vw;
+    height: 90vh;
+    /*align-content: center;*/
+}
+
+
+.formulario{
+  display: flex;
+  align-content: center; /*Estas dos propiedades no se aplican, si antes no pones display: flex. Solo funcionan si aplicas el flexbox, por eso te lo he puesto arriba*/
+  /*align-items: center; *//*No tiene sentido porque esto es para cuando tienes muchos hijos y no caben en la misma línea. Aquí solo tienes un hijo,form*/
+  justify-content: center;
+  width: 21vw;
+  height: 45vh;
+  padding: 3%;
+  box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+form{
+    /*Igualmente aquí te falta el display: flex y luego como quieres un control debajo del otro, flex-direction: column*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items:center;
+    /*display: table;*//*El display table, anula al flexbox, así que quítalo*/
+}
+
+label{
+    /*align-self: flex-start;*/
+    margin: 10px 0px;
+
+
+}
+
+
+input{
+
+    width: 320px;
+    height: 30px;
+
+
+
+}
+
+
+.btn-Enviar{
+
+    /*width: 70px;
+    height: 40px;*/
+    background: rgba(0,255,0,0.2);
+    border-radius: 15px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Dancing Script', cursive;
+
+
+
+  }
